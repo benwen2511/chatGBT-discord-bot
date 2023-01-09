@@ -5,6 +5,8 @@ import re
 import logging
 from get_token import get_token
 
+imageKWS = ['img','imgs','image','images','pic','pics','pictures','picture']
+
 class botName(commands.Bot):
   intents = discord.Intents.default()
   def __init__(self):
@@ -67,7 +69,7 @@ def run_discord_bot():
           await message.delete()
           private=True
           await send_message(message,userMsg,aiMsgContent,private)
-        elif userMsg.startswith('/i'):
+        elif userMsg.startswith('/i') or any(word in userMsg for word in imageKWS):
           await generate_img(message, userMsg)
         else:
           await send_message(message,userMsg,aiMsgContent)
