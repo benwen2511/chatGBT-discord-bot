@@ -9,6 +9,13 @@ ChatGBT discord bot is a project that provide you a great way to interact with c
 - `@MentionBot /h` : show all command lines
 - `@MentionBot /p yourmessage` : send private response into your DM
 - `@MentionBot /i yourmessage` : generate random image based on user input
+- `@MentionBot yourmessage` : alternative way to generate image. `yourmessage` has to contain one of the following words in this list `['img','imgs','image','images','pic','pics','picture','pictures']`
+
+
+![gif](https://user-images.githubusercontent.com/112210000/211229790-4da0c145-9c2c-4096-8392-2577f8885399.gif)
+
+
+
 
 
 ## Installation
